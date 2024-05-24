@@ -2,6 +2,9 @@
 
 This program is a desktop application that allows users to control Spotify playback using custom hotkeys. It features a system tray icon for easy access and supports autostart with Windows. The application provides quick controls for play/pause, skip, rewind, and volume adjustments.
 
+![Alt text](/SpotifyHotkey/img/Screenshot.png?raw=true "Screenshot")
+
+
 ## Setup
 
 ### Prerequisites
