@@ -1,23 +1,38 @@
-# Spotify-Hotkeys
-- This program is a desktop application that allows users to control Spotify playback using custom hotkeys. It features a system tray icon for easy access and supports autostart with Windows. The application provides quick controls for play/pause, skip, rewind, and volume adjustments.
+# Spotify Hotkeys
 
+This program is a desktop application that allows users to control Spotify playback using custom hotkeys. It features a system tray icon for easy access and supports autostart with Windows. The application provides quick controls for play/pause, skip, rewind, and volume adjustments.
 
 ## Setup
 
 ### Prerequisites
-- Download "requirements.txt" and put it in your project. In Terminal type: `pip install -r requirements.txt`
-- 
-- Go to the [Spotify Dashboard](https://developer.spotify.com/dashboard) and create a app.
-- Name your App and give it a description.
-- In **Redirect URIs** type: `http://localhost:8080/callback` and click "Add".
-- At "*Which API/SDKs are you planning to use?*", click "**Web API**"
-- Then save your app and go to *Settings* at the top right corner.
-- Copy the `Client ID`, click *view client secret* and copy the `Client secret`.
-- Paste both of them in the script.
+1. Download the `requirements.txt` file and place it in your project directory.
+2. Open Terminal and run:
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-### Create Desktop application
-- In Terminal type `pip install pyinstaller`
-- Then type `pyinstaller --onefile --windowed SpotifyHotkey.py`
-- After this a folder named *"dist"* will be created, where your `SpotifyHotkey.exe` file is in.
-- Drag the file on the desktop and open it.
-- If your "antivirus software" blocks the file, just allow the file and create the .exe file again with `pyinstaller --onefile --windowed SpotifyHotkey.py`
+3. Go to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard) and create an app.
+4. Name your app and provide a description.
+5. In the **Redirect URIs** section, type: `http://localhost:8080/callback` and click "Add".
+6. Under "*Which API/SDKs are you planning to use?*", select "**Web API**".
+7. Save your app and navigate to the *Settings* at the top right corner.
+8. Copy the `Client ID`, click *view client secret*, and copy the `Client Secret`.
+9. Paste both the `Client ID` and `Client Secret` into the script.
+
+### Create Desktop Application
+1. Install PyInstaller by running:
+    ```sh
+    pip install pyinstaller
+    ```
+
+2. Create a standalone executable by running:
+    ```sh
+    pyinstaller --onefile --windowed SpotifyHotkey.py
+    ```
+
+3. After the process completes, a folder named `dist` will be created. Your `SpotifyHotkey.exe` file will be inside this folder.
+4. Drag the `SpotifyHotkey.exe` file to your desktop and open it.
+5. If your antivirus software blocks the file, allow the file through your antivirus settings and recreate the executable using:
+    ```sh
+    pyinstaller --onefile --windowed SpotifyHotkey.py
+    ```
