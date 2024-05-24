@@ -199,8 +199,7 @@ class SpotifyApp:
         volume_down_entry.grid(row=4, column=1, padx=10, pady=10)
         volume_down_entry.bind('<KeyRelease>', self.limit_input)
 
-        ctk.CTkCheckBox(root, text="Autostart", variable=self.autostart_var, command=self.toggle_autostart).pack(
-            pady=10)
+        #ctk.CTkCheckBox(root, text="Autostart", variable=self.autostart_var, command=self.toggle_autostart).pack(pady=10)
         ctk.CTkButton(root, text="Hide", command=self.hide_window).pack(pady=10)
 
         self.hotkey_listener = HotkeyListener(
