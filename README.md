@@ -8,6 +8,7 @@ This program is a desktop application that allows users to control Spotify playb
 ## Setup
 
 ### Prerequisites
+(You need Spotify Premium)
 1. Download the `requirements.txt` file and place it in your project directory.
 2. Open Terminal and run:
     ```sh
